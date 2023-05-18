@@ -42,25 +42,21 @@ function check(){
     
 
     let text = combination.value;
-    combination.value = combination.value.split('');
 
     console.log(combination.value);
 
+    let result = '';
+    
 
+    for(let symbol of text) {
 
-    // for (let i = 0; i < combination.value.length; i++){
-    //     decoding.innerHTML = `${alphabet[combination.value[i]]}`;
-    // } 
-
-
-    i = 0;
-
-    for (combination.value in alphabet) {
-        if (combination.value[i] = alphabet[i] ) {
-            decoding.innerHTML = `${alphabet[text[0]]}`;
-        }
-        // console.log( alphabet[text[0]] );
+        let newSymbol = symbol.toUpperCase();
+        
+        result = result + ' ' + alphabet[newSymbol];
+ 
     }
+
+    decoding.innerHTML = `${result}`;
 
 
 }
