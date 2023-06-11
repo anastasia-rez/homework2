@@ -41,10 +41,10 @@ alert(`Правильных ответов: ${correct.length} из ${rounds_qt}`
 
 
 for(let item of correct){
-    console.log(item);
+    console.log(`Правильные ответы: Пример ${item.a} * ${item.b} = ${item.user_answer}`);
 }
 
 
 for(let item of wrong){
-    console.log(item);
+    console.log(`Неправильные ответы: Пример ${item.a} * ${item.b} = ? Ваш ответ: ${item.user_answer}, правильный ответ: ${item.answer} `);
 }
